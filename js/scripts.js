@@ -4,6 +4,13 @@ function BankAccount(firstName, lastName, firstDeposit) {
   this.balance = firstDeposit;
 }
 
+BankAccount.prototype.Deposit = function(amount) {
+  this.balance = this.balance + amount 
+}
+
+BankAccount.prototype.Withdraw = function(amount) {
+  this.balance = this.balance - amount 
+}
 
 
 

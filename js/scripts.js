@@ -12,5 +12,13 @@ BankAccount.prototype.Withdraw = function(amount) {
   this.balance = this.balance - amount 
 }
 
+BankAccount.prototype.GetBalance = function() {
+  return this.balance
+}
+
+BankAccount.prototype.GetUserName = function() {
+  return this.firstName + " " + this.lastName
+}
+
 
 

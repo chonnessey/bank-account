@@ -16,7 +16,11 @@
     "url": "https://github.com/chonnessey/bank-account/issues"
   },
   "homepage": "https://github.com/chonnessey/bank-account#readme",
-  "dependencies": {
-    "jest": "^26.6.3"
+  "devDependencies": {
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3",
+    "yargs": "^15.4.1"
   }
 }

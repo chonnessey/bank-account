@@ -42,42 +42,21 @@ function submitHelper(event) {
 }
 
 function depositHelper() {
-  console.log("deposit button clicked")
   const depositAmount = Number($("#deposit-input").val())
-
-
-
-  // parseInt("1") => 1
-  // parseInt("123abc") => 123
-  // Number("123abc") => undefined
-  console.log(depositAmount)
   if (depositAmount === undefined || depositAmount === 0) {
     return alert("Bad input!")
   }
-  // if we get past here, we have a good value/input/number
   myBankAccount.Deposit(depositAmount)
-  console.log(myBankAccount)
-
-  // update the value of the account balance that is displayed
   $(".current-balance").text("$" + myBankAccount.balance)
 }
 
 function withdrawHelper() {
-  console.log("withdraw button clicked")
   const withdrawAmount = Number($("#withdraw-input").val())
-
-  // parseInt("1") => 1
-  // parseInt("123abc") => 123
-  // Number("123abc") => undefined
   console.log(withdrawAmount)
   if (withdrawAmount === undefined || withdrawAmount === 0) {
     return alert("Bad input!")
   }
-  // if we get past here, we have a good value/input/number
   myBankAccount.Withdraw(withdrawAmount)
-  console.log(myBankAccount)
-
-  // update the value of the account balance that is displayed
   $(".current-balance").text("$" + myBankAccount.balance)
 }
 

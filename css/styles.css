@@ -22,3 +22,7 @@
   height: 40px;
   background: lightcyan;
 }
+
+button {
+  cursor: pointer;
+}

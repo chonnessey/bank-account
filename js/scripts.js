@@ -20,5 +20,11 @@ BankAccount.prototype.GetUserName = function() {
   return this.firstName + " " + this.lastName
 }
 
+// UI logic
+
+$(document).ready(function() {
+  
+})
+
 
 

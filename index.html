@@ -11,7 +11,27 @@
 </head>
 <body>
   <section class="main container-fluid">
-
+    <div class="container">
+      <div class="jumbotron">
+        <h1>CRUDit Union</h1>
+      </div>
+      <form id="register" class="card m-2 p-2">
+        <h2>Register Account</h2>
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="Enter first name" required>
+        </div>
+        <div class="form-group">
+          <label for="lastName">First Name</label>
+          <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="Enter last name" required>
+        </div>
+        <div class="form-group">
+          <label for="firstDeposit">Password</label>
+          <input type="number" min="0" class="form-control" id="firstDeposit" placeholder="Enter First Deposit Amount">
+        </div>
+        <button id="registerSubmitButton" type="submit" class="btn btn-block btn-lg btn-outline-info">Submit</button>
+      </form>
+    </div>
   </section>
   <script
     src="https://code.jquery.com/jquery-3.6.0.js"

@@ -15,23 +15,56 @@
       <div class="jumbotron">
         <h1>CRUDit Union</h1>
       </div>
-      <form id="register" class="card m-2 p-2">
-        <h2>Register Account</h2>
-        <div class="form-group">
-          <label for="firstName">First Name</label>
-          <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="Enter first name" required>
+
+      <div class="container">
+        <form id="register" class="card m-2 p-2">
+          <h2>Register Account</h2>
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" aria-describedby="firstNameHelp" placeholder="Enter first name" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">First Name</label>
+            <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="Enter last name" required>
+          </div>
+          <div class="form-group">
+            <label for="firstDeposit">Password</label>
+            <input type="number" min="0" class="form-control" id="firstDeposit" placeholder="Enter First Deposit Amount">
+          </div>
+          <button id="registerSubmitButton" type="submit" class="btn btn-block btn-lg btn-outline-info">Submit</button>
+        </form>
+      </div>
+
+      <div class="account">
+        <div class="card justify-content-center text-center welcome">
+          <!-- GREETING -->
         </div>
-        <div class="form-group">
-          <label for="lastName">First Name</label>
-          <input type="text" class="form-control" id="lastName" aria-describedby="lastNameHelp" placeholder="Enter last name" required>
+        <div class="jumbotron account-info">
+          <h2>Account Balance</h2>
+          <!-- BALANCE -->
+          <div class="current-balance"></div>
         </div>
-        <div class="form-group">
-          <label for="firstDeposit">Password</label>
-          <input type="number" min="0" class="form-control" id="firstDeposit" placeholder="Enter First Deposit Amount">
+
+        <div class="jumbotron account-actions">
+          <div class="container">
+            <h2>Deposits and Withdrawls</h2>
+            <div class="row">
+              <div class="col card m-2 p-2">
+                <input id="deposit-input" type="number">
+                <button class="btn btn-block btn-lg btn-outline-info mt-3" id="deposit-button">Deposit</button>
+              </div>
+              <div class="col card m-2 p-2">
+                <input id="withdraw" type="number">
+                <button class="btn btn-block btn-lg btn-outline-info mt-3" id="withdraw-button">Withdraw</button>
+              </div>
+            </div>
+          </div>
         </div>
-        <button id="registerSubmitButton" type="submit" class="btn btn-block btn-lg btn-outline-info">Submit</button>
-      </form>
+
+      </div> <!-- END OF account -->
     </div>
+    
+  </div>
   </section>
   <script
     src="https://code.jquery.com/jquery-3.6.0.js"
